@@ -16,7 +16,11 @@ function App() {
         >
           Change to {newButtonColor}
       </button> 
-      <input type="checkbox" onClick={() => setIsDisabled((prevIsDisabled) => !prevIsDisabled)}/> 
+      <input 
+      type="checkbox"
+      defaultChecked={isDisabled}
+      aria-checked={isDisabled}
+      onClick={() => setIsDisabled((prevIsDisabled) => !prevIsDisabled)}/> 
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -12,9 +11,10 @@ function App() {
       <button 
         style={{backgroundColor: buttonColor}} 
         onClick={() => setButtonColor(newButtonColor)}
-      >
-        Change to {newButtonColor}
-      </button>  
+        >
+          Change to {newButtonColor}
+      </button> 
+      <input type="checkbox" /> 
     </div>
   );
 }

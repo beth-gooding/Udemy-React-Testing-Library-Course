@@ -1,4 +1,5 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import SummaryForm from "../SummaryForm";
 
 test("Initial state is checkbox unchecked and button disabled", () => {
@@ -19,11 +20,17 @@ test("Checking the checkbox enables the button, and unchecking it disables the b
     name: "I agree to Terms and Conditions",
   });
 
-  fireEvent.click(checkbox);
+  userEvent.click(checkbox);
   expect(checkbox).toBeChecked();
   expect(orderButton).toBeEnabled();
 
-  fireEvent.click(checkbox);
+  userEvent.click(checkbox);
   expect(checkbox).not.toBeChecked();
   expect(orderButton).toBeDisabled();
+});
+
+test("popover responds to hover", () => {
+  // popover starts as hidden
+  // popover appears upon mouseover of checkbox label
+  // popover disappears when we mouse out
 });

@@ -17,3 +17,7 @@
   - Determines what causes the functional tests to fail
   - Functional tests are high level which makes them resistant to refactoring (so the code can be refactored to change the underlying behaviour, but the tests still pass because the button still turns red)
   - Being high level also means that it is hard to tell exactly what is making the functional tests fail
+
+- eslint can enforce standards on your test files!
+- for example, it will make sure that you are using the preferred assertion method
+- There are plugins for testing library and jest dom

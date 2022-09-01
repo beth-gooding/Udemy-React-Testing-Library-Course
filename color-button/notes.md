@@ -8,3 +8,4 @@
 
 - Always you have the option to give a role that does not exist
 - This will give an error from RTL, but it will tell you all the roles that are available in your component
+- RTL is smart enough to link inputs and labels with the same id/htmlFor together

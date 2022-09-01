@@ -12,5 +12,8 @@
 
 - Unit test separate functions (used in multiple places or complex logic) if:
 
-  - The logic is complicated so it's hard to use functional tests
-  - Could be because there are too many edge cases for the function
+  - The logic is complicated so it's hard to use functional tests (e.g. clicking the color button)
+  - Could be because there are too many edge cases for the function, so saves you firing up the component multiple times
+  - Determines what causes the functional tests to fail
+  - Functional tests are high level which makes them resistant to refactoring (so the code can be refactored to change the underlying behaviour, but the tests still pass because the button still turns red)
+  - Being high level also means that it is hard to tell exactly what is making the functional tests fail

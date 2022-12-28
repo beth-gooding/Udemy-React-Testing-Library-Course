@@ -5,6 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
+    "axios": "^1.2.1",
     "bootstrap": "^5.2.0",
     "msw": "^0.47.0",
     "react": "^18.2.0",
@@ -16,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/{?!axios}/\"",
     "eject": "react-scripts eject"
   },
   "browserslist": {
